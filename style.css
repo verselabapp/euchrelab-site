@@ -141,6 +141,45 @@ a:hover { color: var(--accent-gold); }
 .hero h1 { font-size: 34px; }
 .hero p.tagline { font-size: 17px; max-width: 520px; margin: 10px auto 0; }
 
+.download-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.download-badges a {
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+}
+
+.download-badges img {
+  height: 54px;
+  width: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.download-badges .coming-soon a {
+  opacity: 0.55;
+  filter: grayscale(35%);
+  pointer-events: none;
+}
+
+.coming-soon-tag {
+  display: block;
+  text-align: center;
+  color: var(--accent-gold);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
 .tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
